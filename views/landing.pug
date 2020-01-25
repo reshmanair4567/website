@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form(action="/",method="POST")
+    input(type="Phone number",placeholder="Enter your phone number")
+    input(type="Pin",placeholder="Enter the pin")
+    button(type="submit") Generate Account Details
+
